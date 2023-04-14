@@ -52,7 +52,7 @@ def save_married_couples_csv(married_couples, csv_path):
     """
     report_df = pd.DataFrame(married_couples)
     report_header = ('name1', 'name2', 'start_date')
-    report_df.to_csv('marriedcouples.csv', index=False,header=report_header)
+    report_df.to_csv(csv_path, index=False,header=report_header)
     return
 
 if __name__ == '__main__':
